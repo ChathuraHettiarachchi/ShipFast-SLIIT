@@ -1,0 +1,16 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: trust
+    volumes:
+      - ./tmp/db:/var/lib/postgresql/data
+  web:
+    build: .
+    volumes:
+      - .:/order
+    ports:
+      - "3001:3000"
+    depends_on:
+      - db
