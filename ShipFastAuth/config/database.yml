@@ -1,0 +1,21 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8mb4
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: root
+  password:
+  socket: /tmp/mysql.sock
+
+development:
+  <<: *default
+  database: ShipFastAuth_development
+
+test:
+  <<: *default
+  database: ShipFastAuth_test
+
+production:
+  <<: *default
+  database: ShipFastAuth_production
+  username: ShipFastAuth
+  password: <%= ENV['SHIPFASTAUTH_DATABASE_PASSWORD'] %>
