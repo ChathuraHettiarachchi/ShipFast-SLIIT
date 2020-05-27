@@ -1,0 +1,24 @@
+{
+    "family": "nodejs-fargate-task",
+    "networkMode": "awsvpc",
+    "executionRoleArn": "arn:aws:iam::946034122256:role/ecsTaskExecutionRole",
+    "containerDefinitions": [
+        {
+            "name": "nodejs-app",
+            "image": "946034122256.dkr.ecr.us-east-1.amazonaws.com/shipfast/auth:latest",
+            "portMappings": [
+                {
+                    "containerPort": 3000,
+                    "hostPort": 3000,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true
+        }
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "256",
+    "memory": "512"
+}
