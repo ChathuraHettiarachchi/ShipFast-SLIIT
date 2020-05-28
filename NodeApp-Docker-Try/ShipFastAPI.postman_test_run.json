@@ -1,0 +1,179 @@
+{
+	"id": "fec88fe0-e0ea-4cb1-88a4-1c08942638fd",
+	"name": "ShipFastAPI",
+	"timestamp": "2020-05-27T15:16:58.078Z",
+	"collection_id": "f4cf6841-0c11-42d7-9682-cd4637f03c1d",
+	"folder_id": 0,
+	"environment_id": "39ee5e6f-9d28-4fe2-aa51-673b4ad23f16",
+	"totalPass": 0,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "41f279a4-11e5-466f-b805-0a1d06595cd4",
+			"name": "auth",
+			"time": 810,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				921,
+				810
+			],
+			"allTests": [
+				{},
+				{}
+			]
+		},
+		{
+			"id": "cc738f7d-5109-4cc9-8793-7f3547fa8b5f",
+			"name": "new order",
+			"time": 1584,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1530,
+				1584
+			],
+			"allTests": [
+				{},
+				{}
+			]
+		},
+		{
+			"id": "4579f6a4-14e0-4fc5-9243-61318969879e",
+			"name": "get all orders",
+			"time": 1094,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1097,
+				1094
+			],
+			"allTests": [
+				{},
+				{}
+			]
+		},
+		{
+			"id": "9bd334c7-7aa6-4d79-b098-75ee77515a00",
+			"name": "get order by id",
+			"time": 1035,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1039,
+				1035
+			],
+			"allTests": [
+				{},
+				{}
+			]
+		},
+		{
+			"id": "b080ee97-9d8b-4daa-80ec-2bea1f66f505",
+			"name": "get delivery status",
+			"time": 1057,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1148,
+				1057
+			],
+			"allTests": [
+				{},
+				{}
+			]
+		},
+		{
+			"id": "04fae7f4-82f7-462f-922d-440ef9019362",
+			"name": "cancel delivery",
+			"time": 1091,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1098,
+				1091
+			],
+			"allTests": [
+				{},
+				{}
+			]
+		},
+		{
+			"id": "92f69203-5b90-4adb-9a14-8d65a6490463",
+			"name": "get delivery status - after canceled",
+			"time": 1097,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1199,
+				1097
+			],
+			"allTests": [
+				{},
+				{}
+			]
+		}
+	],
+	"count": 2,
+	"totalTime": 15800,
+	"collection": {
+		"requests": [
+			{
+				"id": "41f279a4-11e5-466f-b805-0a1d06595cd4",
+				"method": "POST"
+			},
+			{
+				"id": "cc738f7d-5109-4cc9-8793-7f3547fa8b5f",
+				"method": "POST"
+			},
+			{
+				"id": "4579f6a4-14e0-4fc5-9243-61318969879e",
+				"method": "GET"
+			},
+			{
+				"id": "9bd334c7-7aa6-4d79-b098-75ee77515a00",
+				"method": "GET"
+			},
+			{
+				"id": "b080ee97-9d8b-4daa-80ec-2bea1f66f505",
+				"method": "GET"
+			},
+			{
+				"id": "04fae7f4-82f7-462f-922d-440ef9019362",
+				"method": "POST"
+			},
+			{
+				"id": "92f69203-5b90-4adb-9a14-8d65a6490463",
+				"method": "GET"
+			}
+		]
+	}
+}
