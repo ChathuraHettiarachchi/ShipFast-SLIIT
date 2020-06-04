@@ -6,15 +6,15 @@ Resources:
   Cluster:
     Type: AWS::ECS::Cluster
     Properties:
-      ClusterName: shipfast-cloud-formation
+      ClusterName: shipfast-cloud
   LogGroup:
     Type: AWS::Logs::LogGroup
     Properties:
-      LogGroupName: shipfast-log-group-cloud-formation
+      LogGroupName: shipfast-log-group
   ExecutionRole:
     Type: AWS::IAM::Role
     Properties:
-      RoleName: shipfast-role-cloud-formation
+      RoleName: shipfast-role
       AssumeRolePolicyDocument:
         Statement:
           - Effect: Allow
@@ -26,23 +26,23 @@ Resources:
   ContainerSecurityGroup:
     Type: AWS::EC2::SecurityGroup
     Properties:
-      GroupName: ShipFastContainerSecurityGroupCloudFormation
+      GroupName: ShipFastContainerSecurityGroup
       GroupDescription: Security group for NGINX container
       SecurityGroupIngress:
         - IpProtocol: tcp
-          FromPort: 3000
-          ToPort: 3000
+          FromPort: 80
+          ToPort: 80
           CidrIp: 0.0.0.0/0
   TaskDefinition:
     Type: AWS::ECS::TaskDefinition
     Properties:
-      Family: nodejs-fargate-task-cloud-formation
+      Family: nodejs-fargate-task
       Cpu: 256
       Memory: 512
       NetworkMode: awsvpc
       ExecutionRoleArn: !Ref ExecutionRole
       ContainerDefinitions:
-        - Name: nodejs-app-cloud-formation
+        - Name: nodejs-app
           Image: 946034122256.dkr.ecr.us-east-1.amazonaws.com/shipfast/auth:latest
           PortMappings:
             - ContainerPort: 3001
@@ -52,7 +52,7 @@ Resources:
               awslogs-region: !Ref AWS::Region
               awslogs-group: !Ref LogGroup
               awslogs-stream-prefix: ecs
-        - Name: nodejs-app-order-cloud-formation
+        - Name: nodejs-app-order
           Image: 946034122256.dkr.ecr.us-east-1.amazonaws.com/shipfast/auth:order
           PortMappings:
             - ContainerPort: 3002
@@ -62,7 +62,7 @@ Resources:
               awslogs-region: !Ref AWS::Region
               awslogs-group: !Ref LogGroup
               awslogs-stream-prefix: ecs
-        - Name: nodejs-app-delivery-cloud-formation
+        - Name: nodejs-app-delivery
           Image: 946034122256.dkr.ecr.us-east-1.amazonaws.com/shipfast/auth:delivery
           PortMappings:
             - ContainerPort: 3003
@@ -77,7 +77,7 @@ Resources:
   Service:
     Type: AWS::ECS::Service
     Properties:
-      ServiceName: shipfast-service-cloud-formation
+      ServiceName: shipfast-service
       Cluster: !Ref Cluster
       TaskDefinition: !Ref TaskDefinition
       DesiredCount: 1

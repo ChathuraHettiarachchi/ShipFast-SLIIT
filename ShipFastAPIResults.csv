@@ -1,0 +1,37 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1590923017020,946,auth,200,OK,Thread Group 1-1,text,true,,1708,238,1,1,http://3.235.171.243:3000/api/v1/auth,891,0,359
+1590923017965,1,auth-0,200,OK,Thread Group 1-1,text,true,,1278,0,1,1,null,0,0,0
+1590923017968,1538,new order,200,OK,Thread Group 1-1,text,true,,1745,323,1,1,http://100.26.246.130:3000/api/v1/order,1535,0,295
+1590923019506,0,new order-0,200,OK,Thread Group 1-1,text,true,,1379,0,1,1,null,0,0,0
+1590923019507,779,order by id,200,OK,Thread Group 1-1,text,true,,376,242,1,1,http://100.26.246.130:3000/api/v1/order/25?token=jVpGYq_s1JmX7CWZWCs1dIyWeeNFmDlF8ITv9hOpNpNOgNTSh75FrVMqtrgkT9zJ,779,0,0
+1590923020287,777,all orders,200,OK,Thread Group 1-1,text,true,,1643,240,1,1,http://100.26.246.130:3000/api/v1/orders?token=jVpGYq_s1JmX7CWZWCs1dIyWeeNFmDlF8ITv9hOpNpNOgNTSh75FrVMqtrgkT9zJ,777,0,0
+1590923021065,1073,get delivery info,200,OK,Thread Group 1-1,text,true,,354,242,1,1,http://3.235.42.54:3000/api/v1/delivery/25?token=jVpGYq_s1JmX7CWZWCs1dIyWeeNFmDlF8ITv9hOpNpNOgNTSh75FrVMqtrgkT9zJ,1073,0,285
+1590923022139,765,cancel delivery,200,OK,Thread Group 1-1,text,true,,301,275,1,1,http://3.235.42.54:3000/api/v1/delivery/25,765,0,0
+1590923022905,770,get delivery info - after cancel,200,OK,Thread Group 1-1,text,true,,355,242,1,1,http://3.235.42.54:3000/api/v1/delivery/25?token=jVpGYq_s1JmX7CWZWCs1dIyWeeNFmDlF8ITv9hOpNpNOgNTSh75FrVMqtrgkT9zJ,770,0,0
+1590923023676,823,auth,200,OK,Thread Group 1-1,text,true,,1675,238,1,1,http://3.235.171.243:3000/api/v1/auth,823,0,312
+1590923024499,0,auth-0,200,OK,Thread Group 1-1,text,true,,1245,0,1,1,null,0,0,0
+1590923024500,1246,new order,200,OK,Thread Group 1-1,text,true,,1701,323,1,1,http://100.26.246.130:3000/api/v1/order,1245,0,0
+1590923025745,1,new order-0,200,OK,Thread Group 1-1,text,true,,1335,0,1,1,null,0,0,0
+1590923025746,758,order by id,200,OK,Thread Group 1-1,text,true,,376,242,1,1,http://100.26.246.130:3000/api/v1/order/26?token=Am68xQgkDsw2IgvRAcW6ZlAk7ZOEE5li5nm1GtdJHjw__YHBXdZ49ViKlloYKteZ,758,0,0
+1590923026505,764,all orders,200,OK,Thread Group 1-1,text,true,,1697,240,1,1,http://100.26.246.130:3000/api/v1/orders?token=Am68xQgkDsw2IgvRAcW6ZlAk7ZOEE5li5nm1GtdJHjw__YHBXdZ49ViKlloYKteZ,762,0,0
+1590923027273,785,get delivery info,200,OK,Thread Group 1-1,text,true,,354,242,1,1,http://3.235.42.54:3000/api/v1/delivery/26?token=Am68xQgkDsw2IgvRAcW6ZlAk7ZOEE5li5nm1GtdJHjw__YHBXdZ49ViKlloYKteZ,785,0,0
+1590923028060,799,cancel delivery,200,OK,Thread Group 1-1,text,true,,301,275,1,1,http://3.235.42.54:3000/api/v1/delivery/26,799,0,0
+1590923028859,760,get delivery info - after cancel,200,OK,Thread Group 1-1,text,true,,355,242,1,1,http://3.235.42.54:3000/api/v1/delivery/26?token=Am68xQgkDsw2IgvRAcW6ZlAk7ZOEE5li5nm1GtdJHjw__YHBXdZ49ViKlloYKteZ,760,0,0
+1590923029621,824,auth,200,OK,Thread Group 1-1,text,true,,1675,238,1,1,http://3.235.171.243:3000/api/v1/auth,823,0,297
+1590923030445,0,auth-0,200,OK,Thread Group 1-1,text,true,,1245,0,1,1,null,0,0,0
+1590923030445,1266,new order,200,OK,Thread Group 1-1,text,true,,1701,323,1,1,http://100.26.246.130:3000/api/v1/order,1266,0,0
+1590923031711,0,new order-0,200,OK,Thread Group 1-1,text,true,,1335,0,1,1,null,0,0,0
+1590923031712,761,order by id,200,OK,Thread Group 1-1,text,true,,376,242,1,1,http://100.26.246.130:3000/api/v1/order/27?token=rXp8oJiSeWTqLGG8gPhcBZlfXV_sZ-LxciVFAs8-oJ0q9oJNDlmf8YuQnu2XSXMv,761,0,0
+1590923032474,775,all orders,200,OK,Thread Group 1-1,text,true,,1751,240,1,1,http://100.26.246.130:3000/api/v1/orders?token=rXp8oJiSeWTqLGG8gPhcBZlfXV_sZ-LxciVFAs8-oJ0q9oJNDlmf8YuQnu2XSXMv,772,0,0
+1590923033252,822,get delivery info,200,OK,Thread Group 1-1,text,true,,354,242,1,1,http://3.235.42.54:3000/api/v1/delivery/27?token=rXp8oJiSeWTqLGG8gPhcBZlfXV_sZ-LxciVFAs8-oJ0q9oJNDlmf8YuQnu2XSXMv,822,0,0
+1590923034075,784,cancel delivery,200,OK,Thread Group 1-1,text,true,,301,275,1,1,http://3.235.42.54:3000/api/v1/delivery/27,784,0,0
+1590923034859,760,get delivery info - after cancel,200,OK,Thread Group 1-1,text,true,,355,242,1,1,http://3.235.42.54:3000/api/v1/delivery/27?token=rXp8oJiSeWTqLGG8gPhcBZlfXV_sZ-LxciVFAs8-oJ0q9oJNDlmf8YuQnu2XSXMv,760,0,0
+1590923035620,815,auth,200,OK,Thread Group 1-1,text,true,,1675,238,1,1,http://3.235.171.243:3000/api/v1/auth,814,0,284
+1590923036434,1,auth-0,200,OK,Thread Group 1-1,text,true,,1245,0,1,1,null,0,0,0
+1590923036435,1245,new order,200,OK,Thread Group 1-1,text,true,,1701,323,1,1,http://100.26.246.130:3000/api/v1/order,1244,0,0
+1590923037680,0,new order-0,200,OK,Thread Group 1-1,text,true,,1335,0,1,1,null,0,0,0
+1590923037680,779,order by id,200,OK,Thread Group 1-1,text,true,,376,242,1,1,http://100.26.246.130:3000/api/v1/order/28?token=_9qJa2AtwUAQrYGoJjgjq8kMWpW1qvoiHtNarzmXXGti1eLBqFg7xZB8pYKA_4Zl,779,0,0
+1590923038459,765,all orders,200,OK,Thread Group 1-1,text,true,,1805,240,1,1,http://100.26.246.130:3000/api/v1/orders?token=_9qJa2AtwUAQrYGoJjgjq8kMWpW1qvoiHtNarzmXXGti1eLBqFg7xZB8pYKA_4Zl,764,0,0
+1590923039224,754,get delivery info,200,OK,Thread Group 1-1,text,true,,354,242,1,1,http://3.235.42.54:3000/api/v1/delivery/28?token=_9qJa2AtwUAQrYGoJjgjq8kMWpW1qvoiHtNarzmXXGti1eLBqFg7xZB8pYKA_4Zl,754,0,0
+1590923039979,761,cancel delivery,200,OK,Thread Group 1-1,text,true,,301,275,1,1,http://3.235.42.54:3000/api/v1/delivery/28,761,0,0
+1590923040743,795,get delivery info - after cancel,200,OK,Thread Group 1-1,text,true,,355,242,1,1,http://3.235.42.54:3000/api/v1/delivery/28?token=_9qJa2AtwUAQrYGoJjgjq8kMWpW1qvoiHtNarzmXXGti1eLBqFg7xZB8pYKA_4Zl,795,0,0
